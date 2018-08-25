@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Veeva</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Bailey Chen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <!--<div class="row">-->
+        <!--<div class="col-lg-12 text-center">-->
+          <!--<h1 class="mt-5">A Bootstrap 4 Starter Template</h1>-->
+          <!--<p class="lead">Complete with pre-defined file paths and responsive navigation!</p>-->
+          <!--<ul class="list-unstyled">-->
+            <!--<li>Bootstrap 4.1.3</li>-->
+            <!--<li>jQuery 3.3.1</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</div>-->
+      <div class="row">
+        <div class="col-lg-8">
+          <img src="images/veeva-logo.png" alt="Veeva" width="400" height="100">
+        </div>
+      </div>
+
+      <!--Page Header-->
+      <div class="row border-bottom">
+        <div class="col-lg-12">
+          <h2>
+            2018 Summer at Veeva Systems
+          </h2>
+          <h5>Pleasanton, CA</h5>
+        </div>
+      </div>
+
+      <div class="description">
+        For the summer after my junior year, I had the opportunity to intern at Veeva Systems in Pleasanton! Veeva provides cloud software tailored for all the needs and
+        quirks of the life sciences industry.
+        I got to work on a full-stack feature to create a "Version Controller" that lets a user navigate and explore the setup of all versions of a workflow.
+        This feature addressed a common source of confusion for customers and reduced production costs by ~15%.
+        <br>
+        <br>
+        <p style="color: #FFA500"><b><i>Background</i></b></p>
+        Documents are numerous and important in the healthcare industry - from keeping track of clinical trials
+        to promotional material and these documents need to follow numerous, stringent compliance rules.
+        To streamline this complexity, we want to organize and formalize the process of various events like:
+        sending notifications, assigning tasks for people to complete, finalizing document drafts, etc.,
+        and we do so by grouping these events into "workflows".
+        For example, a biopharmaceutical company might want to create a workflow on a promotional document
+        to get certain people to verify that the document makes accurate claims about a drug.
+        <br>
+        <br>
+        <p style="color: #FFA500"><b><i>Problem</i></b></p>
+        Before the Version Controller, whenever someone wanted to examine the setup of a workflow, they would only see the <i>latest</i> version of
+        a workflow, which could be different from the workflow version running on the document. So clearly, this doesn't always help the
+        user see how the running workflow is setup. This mismatch in workflow versions is
+        actually a major source of confusion for customers and this underlying 'workflow' logic
+        runs across multiple applications on Veeva's 'Vault' platform (user: does this setup actually reflect what
+        is running on my document? how do I know? Send help!).
+        <br>
+        For my team, around half of the production issues were related to document workflows.
+        To resolve the issue, customers would need to contact Veeva employees who would need to go through the Java backend and query to the MySQL database
+        to find the version of the workflow running on a document. And even then, it would be inconvenient to try viewing the setup of past workflow versions.
+        <br>
+        <br>
+        <p style="color: #FFA500"><b><i>The Fix</i></b></p>
+        Now, with the Version Controller, users can access an enhanced menu-widget option to navigate through the setup
+        of all versions of a workflow. They can also see the version of a workflow a document is running against
+        so that there is no version mismatch. All this information is extracted at runtime. This would let customers examine and resolve these document workflow related issues <i>themselves</i>
+        and spare the process of contacting support altogether!
+        <br>
+        <br>
+        A lot of what I learned over the summer was working with JavaScript and UI in general,
+        along with learning how to communicate effectively at different technical levels (talking to product managers vs. developers).
+        The iterative process of discussing the plan for API changes and working towards the best customer user-experience was also something I delved into and learned about!
+        <br>
+        <br>
+        <div class="row">
+
+          <div class="col-lg-6 shadow-lg">
+            <img src="images/pop-up-dialog-cropped.png" width="525" height="400"/>
+          </div>
+
+          <div class="col-lg-4 align-content-center">
+            <ul>
+              <li>Pop-up Dialog that provides contextual information on workflows (version number, last modified, etc)</li>
+              <li>Navigation links to all workflow versions </li>
+              <!--<li><i>Read-only</i> view of past workflow versions setup (it would be bad if a user could bring back an old broken workflow version. Yikes!)</li>-->
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 shadow-lg">
+            <img src="images/past-workflow-details.png" width="700" height="200"/>
+          </div>
+          <div class="col-lg-4 align-content-center">
+            <ul>
+              <!--<li>Pop-up Dialog that provides contextual information on workflows (version number, last modified, etc)</li>-->
+              <!--<li>Navigation links to all workflow versions </li>-->
+              <li><i>Read-only</i> view of past workflow versions setup (it would be bad if a user could bring back an old broken workflow version. Yikes!)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 shadow-lg">
+            <img src="images/past-workflow-flowchart.png" width="700"/>
+          </div>
+        </div>
+
+        <div class="row border-top">
+          <p>Veeva Systems © Bailey Chen 2018</p>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
